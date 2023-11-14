@@ -1,4 +1,4 @@
-// PRODUCTS ARRAY
+//! PRODUCTS ARRAY
 const products = [
   {
     name: 'Aloe Vera',
@@ -128,7 +128,7 @@ const products = [
   }
 ]
 
-// PRODUCT FILE
+//! PRODUCT FILE
 const createProductFile = (object) => {
   let productDom = document.createElement('div')
   productDom.className = 'product'
@@ -168,7 +168,7 @@ const createProductFile = (object) => {
   return productDom
 }
 
-// NEW ARRIVALS PRODUCTS
+//! NEW ARRIVALS PRODUCTS
 const getNewArrivalsProducts = (arr) => {
   let newArrivalsProducts = []
   let arrLength = arr.length
@@ -187,17 +187,7 @@ const printNewArrivalsProducts = (arr) => {
 }
 printNewArrivalsProducts(newArrivalsProducts)
 
-// FILTERED PRODUCTS IN THE FILTERED SECTION
-const filteredProductsArticle = document.querySelector('#filtered-products')
-const testPrintProducts = (arr) => {
-  arr.forEach((object) => {
-    let productDom = createProductFile(object)
-    filteredProductsArticle.append(productDom)
-  })
-}
-testPrintProducts(products)
-
-// GET CATEGORIES FROM PRODUCTS AND PRINT THEM
+//! GET CATEGORIES FROM PRODUCTS AND PRINT THEM
 const getCategoryTemplate = (category) => {
   return `
 <option value="${category}">${category}</option>
@@ -219,8 +209,41 @@ const categorySelector = document.querySelector('#category-selector')
 const printCategoriesInSelect = (arr) => {
   arr.forEach((category) => {
     let newCategoryOption = getCategoryTemplate(category)
-    categorySelector.innerHTML = categorySelector.innerHTML += newCategoryOption
+    categorySelector.innerHTML += newCategoryOption
   })
 }
 printCategoriesInSelect(categoriesArray)
 
+//! FILTERS SECTION
+const priceSelector = document.querySelector('#price-input')
+const filteredProductsArticle = document.querySelector('#filtered-products')
+
+const filterProducts = () => {
+  filteredProductsArticle.innerHTML = ''
+  products.forEach((product) => {
+    if (
+      categorySelector.value === 'Select Category' ||
+      categorySelector.value === 'all categories' ||
+      product.category === categorySelector.value
+    ) {
+      if (product.price <= priceSelector.value || priceSelector.value === '') {
+        let productDom = createProductFile(product)
+        filteredProductsArticle.append(productDom)
+      }
+    }
+  })
+}
+
+const submitButton = document.querySelector('#submit-button')
+submitButton.addEventListener('click', filterProducts)
+
+const clearFiltersButton = document.querySelector('#clear-button')
+const clearFilters = () => {
+  categorySelector.value = 'Select Category'
+  priceSelector.value = ''
+  filterProducts()
+}
+clearFiltersButton.addEventListener('click', clearFilters)
+
+// IN ORDER TO HAVE EVERYTHING BEING SHOWN IN SCREEN AT STARTING
+clearFilters()

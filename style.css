@@ -23,8 +23,7 @@
   --margin-01: 2svw;
   --margin-02: 4svw;
   --ease_ease-transition: ease-in-out 0.2s;
-  --transparent-bg: rgba(255, 255, 255, .25)
-  --text-shadow: 0px 0px 5px var(--plantique-black);
+  --transparent-bg: rgba(255, 255, 255, .25) --text-shadow: 0px 0px 5px var(--plantique-black);
 }
 
 * {
@@ -395,6 +394,7 @@ h2 {
   font-weight: var(--font-weight-titles);
   line-height: var(--line-height-h2);
   min-width: 40svw;
+  text-align: center;
 }
 
 
@@ -406,6 +406,7 @@ h2 {
   align-items: center;
   justify-content: center;
   min-width: 300px;
+  max-width: 600px;
   border-radius: 30px;
   height: 450px;
   flex: 1;
@@ -463,7 +464,42 @@ h4 {
 }
 
 /* PRODUCTS FILTER */
-#products-filter{
+label {
+  display: none;
+}
+
+#filters {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: var(--gap-big);
+}
+
+
+button {
+  color: var(--plantique-black);
+  font-weight: var(--font-weight-subtitles);
+  font-size: var(--font-height-text);
+  border: 1px solid var(--plantique-black);
+  min-width: 150px;
+  height: 55px;
+  border-radius: 100svw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--plantique-white);
+  transition: var(--ease_ease-transition);
+  transition-duration: .2s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--plantique-black);
+  color: var(--plantique-white);
+}
+
+#products-filter {
   display: flex;
   flex-direction: column;
   gap: var(--gap-sections);
@@ -477,6 +513,8 @@ h4 {
 #filtered-products {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: var(--gap-small);
 }
 
@@ -508,6 +546,7 @@ footer li {
   border: 1px solid var(--plantique-black);
   box-shadow: 0px 0px 0px var(--plantique-black);
 }
+
 footer li:hover {
   border: 1px solid var(--plantique-black);
   box-shadow: 0px -7.5px 0px var(--plantique-black);
@@ -520,6 +559,6 @@ footer li:hover {
 #bottom-footer {
   background-color: var(--plantique-white);
   width: 100%;
-padding: var(--padding-02);
-border-radius: 30px;
+  padding: var(--padding-02);
+  border-radius: 30px;
 }
