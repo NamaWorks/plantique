@@ -476,8 +476,36 @@ label {
   gap: var(--gap-big);
 }
 
+select,
+#price-input {
+  appearance: none;
+  font-family: var(--font-family);
+  color: var(--plantique-black);
+  font-weight: var(--font-weight-subtitles);
+  font-size: var(--font-height-text);
+  border: 1px solid var(--plantique-black);
+  width: 150px;
+  height: 55px;
+  border-radius: 100svw;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: var(--ease_ease-transition);
+  text-align-last: center;
+}
+
+select:hover {
+  cursor: pointer;
+  background-color: var(--plantique-black);
+  color: var(--plantique-white);
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 
 button {
+  font-family: var(--font-family);
   color: var(--plantique-black);
   font-weight: var(--font-weight-subtitles);
   font-size: var(--font-height-text);

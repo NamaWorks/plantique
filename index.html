@@ -144,12 +144,13 @@
       <h2>Our Products</h2>
       <div id="filter-x-products">
         <article id="filters">
+          <h3>Filters</h3>
           <label for="category-selector">Select Category</label>
           <select name="category-selector" id="category-selector">
             <option value="Select Category" disabled selected style="display: none;">Select Category</option>
             <option value="all categories">all categories</option>
           </select>
-          <input id="price-input" type="number" placeholder="Price">
+          <input id="price-input" type="number" placeholder="Price" min="0">
           <button id="submit-button">Submit</button>
           <button id="clear-button">Clear Filters</button>
         </article>
