@@ -7,7 +7,8 @@ const products = [
     imageUrl:
       'url(https://res.cloudinary.com/dgrhbsilh/image/upload/v1699870739/Plantique/opt/ys1wguejzsao1f8se4ad_w8ta4e.jpg)',
     description:
-      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.'
+      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.',
+    productLink: 'https://www.google.com/'
   },
   {
     name: 'Golden Pothos',
@@ -16,7 +17,8 @@ const products = [
     imageUrl:
       'url(https://res.cloudinary.com/dgrhbsilh/image/upload/v1699870730/Plantique/opt/golden_pothos_wljaai_qgjpsu.jpg)',
     description:
-      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.'
+      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.',
+    productLink: 'https://www.google.com/'
   },
   {
     name: 'Bamboo',
@@ -25,7 +27,8 @@ const products = [
     imageUrl:
       'url(https://res.cloudinary.com/dgrhbsilh/image/upload/v1699870740/Plantique/opt/bamboo_dyxygv_ck9dqa.jpg)',
     description:
-      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.'
+      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.',
+    productLink: 'https://www.google.com/'
   },
   {
     name: 'Philodendrons Scandens',
@@ -34,7 +37,8 @@ const products = [
     imageUrl:
       'url(https://res.cloudinary.com/dgrhbsilh/image/upload/v1699870734/Plantique/opt/Philodendrons_Scandens_qfvyjp_iciwcc.jpg)',
     description:
-      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.'
+      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.',
+    productLink: 'https://www.google.com/'
   },
   {
     name: 'Croton',
@@ -43,7 +47,8 @@ const products = [
     imageUrl:
       'url(https://res.cloudinary.com/dgrhbsilh/image/upload/v1699870728/Plantique/opt/croton_f2dstn_kmudds.jpg)',
     description:
-      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.'
+      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.',
+    productLink: 'https://www.google.com/'
   },
   {
     name: 'Banyan Ficus',
@@ -52,7 +57,8 @@ const products = [
     imageUrl:
       'url(https://res.cloudinary.com/dgrhbsilh/image/upload/v1699870741/Plantique/opt/Banyan_Ficus_jsunpi_jxome7.jpg)',
     description:
-      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.'
+      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.',
+    productLink: 'https://www.google.com/'
   },
   {
     name: 'Monstera',
@@ -61,7 +67,8 @@ const products = [
     imageUrl:
       'url(https://res.cloudinary.com/dgrhbsilh/image/upload/v1699870733/Plantique/opt/monstera_opsosc_qovml1.jpg)',
     description:
-      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.'
+      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.',
+    productLink: 'https://www.google.com/'
   },
   {
     name: 'Cyclamen',
@@ -70,7 +77,8 @@ const products = [
     imageUrl:
       'url(https://res.cloudinary.com/dgrhbsilh/image/upload/v1699870729/Plantique/opt/Cyclamen_c9gxpu_yikjsv.jpg)',
     description:
-      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.'
+      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.',
+    productLink: 'https://www.google.com/'
   },
   {
     name: 'bougainvillea',
@@ -79,7 +87,8 @@ const products = [
     imageUrl:
       'url(https://res.cloudinary.com/dgrhbsilh/image/upload/v1699870742/Plantique/opt/bougainvillea_x0wyoz_drqnl1.jpg)',
     description:
-      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.'
+      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.',
+    productLink: 'https://www.google.com/'
   },
   {
     name: 'chinese jasmine',
@@ -88,7 +97,8 @@ const products = [
     imageUrl:
       'url(https://res.cloudinary.com/dgrhbsilh/image/upload/v1699870728/Plantique/opt/chinese_jasmine_w76lkf_kjcsz0.jpg)',
     description:
-      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.'
+      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.',
+    productLink: 'https://www.google.com/'
   },
   {
     name: 'honeysuckle',
@@ -97,7 +107,8 @@ const products = [
     imageUrl:
       'url(https://res.cloudinary.com/dgrhbsilh/image/upload/v1699870731/Plantique/opt/honeysuckle_zqfvk7_kyjgnb.jpg)',
     description:
-      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.'
+      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.',
+    productLink: 'https://www.google.com/'
   },
   {
     name: 'mangifera indica',
@@ -106,7 +117,8 @@ const products = [
     imageUrl:
       'url(https://res.cloudinary.com/dgrhbsilh/image/upload/v1699870733/Plantique/opt/mangifera_indica_gdygjf_muicdu.jpg)',
     description:
-      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.'
+      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.',
+    productLink: 'https://www.google.com/'
   },
   {
     name: 'fig',
@@ -115,7 +127,8 @@ const products = [
     imageUrl:
       'url(https://res.cloudinary.com/dgrhbsilh/image/upload/v1699870729/Plantique/opt/fig_bmxnro_szlyy4.jpg)',
     description:
-      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.'
+      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.',
+    productLink: 'https://www.google.com/'
   },
   {
     name: 'pomegranate',
@@ -124,7 +137,8 @@ const products = [
     imageUrl:
       'url(https://res.cloudinary.com/dgrhbsilh/image/upload/v1699870736/Plantique/opt/pomegranate_yww32e_itg0qp.jpg)',
     description:
-      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.'
+      'This spiky, low-maintenance houseplant was the top-searched plant in nearly a dozen states, according to a recent survey by home furnishings site Joybird.',
+    productLink: 'https://www.google.com/'
   }
 ]
 
@@ -132,6 +146,8 @@ const products = [
 const createProductFile = (object) => {
   let productDom = document.createElement('div')
   productDom.className = 'product'
+  let productLink = object.productLink
+  productDom.setAttribute('href', productLink)
   productDom.style.backgroundImage = object.imageUrl
 
   let glassBox = document.createElement('div')
@@ -164,6 +180,12 @@ const createProductFile = (object) => {
   productTextContainer.append(productDescription)
   productTextContainer.append(productPrice)
   glassBox.append(productTextContainer)
+
+  // ? ADD CLICK TO EACH PRODUCT
+  const visitProductPage = () => {
+    window.open(productLink, '_blank').focus()
+  }
+  productDom.addEventListener('click', visitProductPage)
 
   return productDom
 }

@@ -18,6 +18,10 @@
   <header>
     <div id="top-image">
       <nav>
+        <div id="responsive-menu">
+          <img src="https://res.cloudinary.com/dgrhbsilh/image/upload/v1700169611/Plantique/dots-menu_zo1ltw.png"
+            alt="Burger menu picture">
+        </div>
         <ul id="nav-elements-list">
           <div class="nav-half" id="first-half-nav">
             <li class="nav-element">
@@ -145,14 +149,22 @@
       <div id="filter-x-products">
         <article id="filters">
           <h3>Filters</h3>
-          <label for="category-selector">Select Category</label>
-          <select name="category-selector" id="category-selector">
-            <option value="Select Category" disabled selected style="display: none;">Select Category</option>
-            <option value="all categories">all categories</option>
-          </select>
-          <input id="price-input" type="number" placeholder="Price" min="0">
-          <button id="submit-button">Submit</button>
-          <button id="clear-button">Clear Filters</button>
+          <div>
+            <div>
+              <label for="category-selector">Select Category</label>
+              <select name="category-selector" id="category-selector">
+                <option value="Select Category" disabled selected style="display: none;">Select Category</option>
+                <option value="all categories">all categories</option>
+              </select>
+              <input id="price-input" type="number" placeholder="Price" min="0">
+            </div>
+            <div>
+              <button id="submit-button">Submit</button>
+              <button id="clear-button">Clear Filters</button>
+            </div>
+            
+            
+          </div>
         </article>
         <article id="filtered-products">
         </article>
