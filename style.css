@@ -235,6 +235,7 @@ header .subtitles {
 }
 
 #header-footer .glass-box {
+  min-height: 150px;
   max-width: 20svw;
   display: flex;
   flex-direction: column;
@@ -515,6 +516,7 @@ label {
 select,
 #price-input {
   appearance: none;
+  background-color: var(--plantique-white);
   font-family: var(--font-family);
   color: var(--plantique-black);
   font-weight: var(--font-weight-subtitles);
@@ -537,6 +539,12 @@ select:hover {
 
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
+}
+
+#filters>div,
+#filters>div>div {
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -656,6 +664,28 @@ footer li:hover {
     font-size: 10rem;
   }
 
+  .product>.glass-box {
+    opacity: 1;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 30px;
+    padding: var(--padding-02);
+  }
+
+  .product>.glass-box:hover {
+    opacity: 0;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 30px;
+    padding: var(--padding-02);
+  }
+
 
 }
 
@@ -678,6 +708,7 @@ footer li:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: var(--gap-big);
   }
 
   #filters h3 {
