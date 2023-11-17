@@ -216,6 +216,7 @@ header .subtitles {
   justify-content: space-between;
   max-height: 20svh;
   margin: var(--margin-01);
+  gap: var(--gap-big);
 }
 
 .header-footer-part:first-child {
@@ -507,6 +508,10 @@ label {
   gap: var(--gap-big);
 }
 
+#filters div {
+  gap: var(--gap-small);
+}
+
 select,
 #price-input {
   appearance: none;
@@ -735,4 +740,35 @@ footer li:hover {
   .principles-containers:nth-child(2) {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 450px) {
+  #header-main {
+    display: flex;
+    flex-direction: column;
+    top: 50px;
+  }
+
+  #header-main .text {
+    top: -50px;
+  }
+
+  #header-main .text {
+    max-width: none;
+  }
+
+  h1 {
+    font-size: 3rem;
+    top: 20px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
 }
